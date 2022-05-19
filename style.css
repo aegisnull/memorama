@@ -13,3 +13,7 @@ main {
   border: 1px solid black;
   margin: 30px auto;
 }
+
+.dashboard__left {
+  background-color: rgba(255, 255, 255, 0.2);
+}
