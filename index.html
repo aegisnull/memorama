@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memorama Game</title>
+  </head>
+  <body>
+    <main class="dashboard__container">
+      <div class="dashboard__left">
+        <h1>Memory Game</h1>
+        <table>
+          <tr>
+            <td><button id="0" onclick="uncover(0)"></button></td>
+            <td><button id="1" onclick="uncover(1)"></button></td>
+            <td><button id="2" onclick="uncover(2)"></button></td>
+            <td><button id="3" onclick="uncover(3)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="4" onclick="uncover(4)"></button></td>
+            <td><button id="5" onclick="uncover(5)"></button></td>
+            <td><button id="6" onclick="uncover(6)"></button></td>
+            <td><button id="7" onclick="uncover(7)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="8" onclick="uncover(8)"></button></td>
+            <td><button id="9" onclick="uncover(9)"></button></td>
+            <td><button id="10" onclick="uncover(10)"></button></td>
+            <td><button id="11" onclick="uncover(11)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="12" onclick="uncover(12)"></button></td>
+            <td><button id="13" onclick="uncover(13)"></button></td>
+            <td><button id="14" onclick="uncover(14)"></button></td>
+            <td><button id="15" onclick="uncover(15)"></button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="dashboard__right">
+        <p id="score" class="statistics">Score: 0</p>
+        <p id="remainingTime" class="statistics">Timer: 30 seconds</p>
+        <p id="movements" class="statistics">Movements: 0</p>
+      </div>
+    </main>
+    <footer>
+      <p>Game coded by 👉‍‍<a href="#" target="_blank">Luis Tellez</a></p>
+    </footer>
+  </body>
+</html>
