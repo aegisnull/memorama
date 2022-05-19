@@ -12,6 +12,7 @@ body {
 main {
   border: 1px solid black;
   margin: 30px auto;
+  display: flex;
 }
 
 .dashboard__left {
