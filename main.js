@@ -38,7 +38,7 @@ function startTimer() {
 function blockCards() {
   for (let i = 0; i <= 15; i++) {
     let blockedCard = document.getElementById(i);
-    blockedCard.innerHTML = numbers[i];
+    blockedCard.innerHTML = `<img src="./img/${numbers[i]}.png">`;
     blockedCard.disabled = true;
   }
 }
