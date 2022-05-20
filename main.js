@@ -8,6 +8,7 @@ let movements = 0;
 let score = 0;
 let time = false;
 let timer = 30;
+let initialTime = 30;
 let timeRemainingId = false;
 
 // Track movements & score to parse to HTML
@@ -84,7 +85,7 @@ function uncover(id) {
 
       if (score == 8) {
         showScore.innerHTML = `Score: ${score} You won!`;
-        showTimer = `Great! You won in ${timer} seconds`;
+        showTimer = `Great! You won in ${initialTime - timer} seconds`;
         showMovements.innerHTML = `Movements: ${movements} Nice!`;
       }
     } else {
