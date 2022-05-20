@@ -8,6 +8,7 @@ let movements = 0;
 let score = 0;
 let time = false;
 let timer = 30;
+let timeRemainingId = false;
 
 // Track movements & score to parse to HTML
 let showMovements = document.getElementById("movements");
@@ -23,9 +24,12 @@ console.log(numbers);
 
 // Functions to start and stop the timer
 function startTimer() {
-  setInterval(() => {
+  timeRemainingId = setInterval(() => {
     timer--;
     showTimer.innerHTML = `Time: ${timer} segundos`;
+    if (timer == 0) {
+      clearInterval(timeRemainingId);
+    }
   }, 1000);
 }
 
