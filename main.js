@@ -31,6 +31,11 @@ function startTimer() {
 
 // Main function
 function uncover(id) {
+  if (time == false) {
+    startTimer();
+    time = true;
+  }
+
   uncoveredCards++;
   console.log(uncoveredCards);
 
