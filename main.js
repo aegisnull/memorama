@@ -15,5 +15,6 @@ function uncover(id) {
 
   if (uncoveredCards == 1) {
     //show first number
+    card1 = document.getElementById(id);
   }
 }
