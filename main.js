@@ -84,8 +84,11 @@ function uncover(id) {
       showScore.innerHTML = `Score: ${score}`;
 
       if (score == 8) {
+        clearInterval(timeRemainingId);
         showScore.innerHTML = `Score: ${score} You won!`;
-        showTimer = `Great! You won in ${initialTime - timer} seconds`;
+        showTimer.innerHTML = `Great! You won in ${
+          initialTime - timer
+        } seconds`;
         showMovements.innerHTML = `Movements: ${movements} Nice!`;
       }
     } else {
