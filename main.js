@@ -84,6 +84,7 @@ function uncover(id) {
 
       if (score == 8) {
         showScore.innerHTML = `Score: ${score} You won!`;
+        showTimer = `Great! You won in ${timer} seconds`;
         showMovements.innerHTML = `Movements: ${movements} Nice!`;
       }
     } else {
