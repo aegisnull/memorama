@@ -6,6 +6,9 @@ let firstResult = null;
 let secondResult = null;
 let movements = 0;
 
+// Track movements and parse to HTML
+let showMovements = document.getElementById("movements");
+
 // Random number generator
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
 numbers = numbers.sort(() => {
@@ -37,5 +40,6 @@ function uncover(id) {
 
     // Increase movements
     movements++;
+    showMovements.innerHTML = movements;
   }
 }
