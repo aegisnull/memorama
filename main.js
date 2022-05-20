@@ -94,7 +94,7 @@ function uncover(id) {
         card1.disabled = false;
         card2.disabled = false;
         uncoveredCards = 0;
-      }, 1500);
+      }, 800);
     }
   }
 }
