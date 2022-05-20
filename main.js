@@ -18,9 +18,9 @@ let rightAudio = new Audio("./sounds/right.wav");
 let wrongAudio = new Audio("./sounds/wrong.wav");
 
 // Track movements & score to parse to HTML
-let showMovements = document.getElementById("movements");
-let showScore = document.getElementById("score");
-let showTimer = document.getElementById("remainingTime");
+let showMovements = document.querySelector("#movements");
+let showScore = document.querySelector("#score");
+let showTimer = document.querySelector("#remainingTime");
 
 // Random number generator
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
