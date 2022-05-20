@@ -71,3 +71,42 @@ a {
 img {
   width: 80%;
 }
+
+@media screen and (max-width: 740px) {
+  main {
+    flex-direction: column;
+    width: 420px;
+  }
+
+  .dashboard__left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dashboard__right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  main {
+    width: 90vw;
+  }
+
+  button {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  main {
+    width: 90vw;
+  }
+
+  button {
+    height: 70px;
+    width: 70px;
+  }
+}
