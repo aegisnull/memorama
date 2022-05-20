@@ -9,6 +9,9 @@
 
 This is my first javascript project which consists of a small memory card game built entirely with Vanilla Javascript to put in practice my new knowledge of Javascript arrays, functions, loops and objects.
 
+<img width="650" alt="Screen Shot 2022-05-19 at 9 26 42 p m" src="https://user-images.githubusercontent.com/27663011/169450519-deb7bb11-7712-40d2-a36d-c6f2f39d9c3d.png">
+
+
 ## Technology Stack
 
 - HTML
