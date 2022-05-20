@@ -6,10 +6,13 @@ let firstResult = null;
 let secondResult = null;
 let movements = 0;
 let score = 0;
+let time = false;
+let timer = 30;
 
 // Track movements & score to parse to HTML
 let showMovements = document.getElementById("movements");
 let showScore = document.getElementById("score");
+let showTimer = document.getElementById("remainingTime");
 
 // Random number generator
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
@@ -17,6 +20,14 @@ numbers = numbers.sort(() => {
   return Math.random() - 0.5;
 });
 console.log(numbers);
+
+// Functions to start and stop the timer
+function startTimer() {
+  setInterval(() => {
+    timer--;
+    showTimer.innerHTML = `Time: ${timer} segundos`;
+  }, 1000);
+}
 
 // Main function
 function uncover(id) {
