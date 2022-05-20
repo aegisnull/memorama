@@ -6,7 +6,7 @@ let firstResult = null;
 let secondResult = null;
 let movements = 0;
 let score = 0;
-let time = false;
+let timer = false;
 
 // Track movements & score to parse to HTML
 let showMovements = document.getElementById("movements");
@@ -21,6 +21,11 @@ console.log(numbers);
 
 // Main function
 function uncover(id) {
+  if (timer == false) {
+    startTimer();
+    timer = true;
+  }
+
   uncoveredCards++;
   console.log(uncoveredCards);
 
