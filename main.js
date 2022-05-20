@@ -3,6 +3,9 @@ numbers = numbers.sort(() => {
   return Math.random() - 0.5;
 });
 
+let card1 = null;
+let card2 = null;
+
 console.log(numbers);
 
 // Main function
