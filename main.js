@@ -65,6 +65,7 @@ function uncover(id) {
     card1 = document.getElementById(id);
     firstResult = numbers[id];
     card1.innerHTML = `<img src="./img/${firstResult}.png">`;
+    clickAudio.play();
 
     // Disable first button
     card1.disabled = true;
