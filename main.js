@@ -40,6 +40,6 @@ function uncover(id) {
 
     // Increase movements
     movements++;
-    showMovements.innerHTML = movements;
+    showMovements.innerHTML = `Movements: ${movements}`;
   }
 }
