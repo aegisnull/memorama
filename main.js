@@ -92,10 +92,6 @@ function uncover(id) {
       showScore.innerHTML = `Score: ${score}`;
       rightAudio.play();
 
-      else {
-        wrongAudio.play();
-      }
-
       if (score == 8) {
         winAudio.play();
         clearInterval(timeRemainingId);
@@ -107,6 +103,7 @@ function uncover(id) {
       }
     } else {
       // Show temporary cards and hide them after 1.5 seconds
+      wrongAudio.play();
       setTimeout(() => {
         card1.innerHTML = " ";
         card2.innerHTML = " ";
