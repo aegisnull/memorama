@@ -92,6 +92,10 @@ function uncover(id) {
       showScore.innerHTML = `Score: ${score}`;
       rightAudio.play();
 
+      else {
+        wrongAudio.play();
+      }
+
       if (score == 8) {
         clearInterval(timeRemainingId);
         showScore.innerHTML = `Score: ${score} You won!`;
