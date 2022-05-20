@@ -29,8 +29,17 @@ function startTimer() {
     showTimer.innerHTML = `Time: ${timer} segundos`;
     if (timer == 0) {
       clearInterval(timeRemainingId);
+      blockCards();
     }
   }, 1000);
+}
+
+function blockCards() {
+  for (let i = 0; i <= 15; i++) {
+    let blockedCard = document.getElementById(i);
+    blockedCard.innerHTML = numbers[i];
+    blockedCard.disabled = true;
+  }
 }
 
 // Main function
