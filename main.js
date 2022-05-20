@@ -22,5 +22,8 @@ function uncover(id) {
     card1 = document.getElementById(id);
     firstResult = numbers[id];
     card1.innerHTML = firstResult;
+
+    // Disable first button
+    card1.disabled = true;
   }
 }
