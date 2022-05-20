@@ -5,9 +5,11 @@ let card2 = null;
 let firstResult = null;
 let secondResult = null;
 let movements = 0;
+let score = 0;
 
-// Track movements and parse to HTML
+// Track movements & score to parse to HTML
 let showMovements = document.getElementById("movements");
+let showScore = document.getElementById("score");
 
 // Random number generator
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
@@ -41,5 +43,14 @@ function uncover(id) {
     // Increase movements
     movements++;
     showMovements.innerHTML = `Movements: ${movements}`;
+
+    // Compare results
+    if (firstResult == secondResult) {
+      // Reset uncovered cards counter
+      uncoveredCards = 0;
+
+      // Update score counter
+      score++;
+    }
   }
 }
