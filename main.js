@@ -90,6 +90,7 @@ function uncover(id) {
       // Update score counter
       score++;
       showScore.innerHTML = `Score: ${score}`;
+      rightAudio.play();
 
       if (score == 8) {
         clearInterval(timeRemainingId);
