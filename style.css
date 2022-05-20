@@ -45,3 +45,19 @@ button:hover {
   width: 250px;
   height: 400px;
 }
+
+.statistics {
+  border: 1px solid white;
+  height: 105px;
+  border-radius: 8px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
