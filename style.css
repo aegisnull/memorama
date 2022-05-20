@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  border: 1px solid black;
+  width: 730px;
   margin: 30px auto;
   display: flex;
   align-items: center;
@@ -44,6 +44,7 @@ button:hover {
   border-bottom-right-radius: 8px;
   width: 250px;
   height: 400px;
+  padding: 0 20px;
 }
 
 .statistics {
