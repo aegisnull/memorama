@@ -65,7 +65,7 @@ function uncover(id) {
     //show second number
     card2 = document.getElementById(id);
     secondResult = numbers[id];
-    card2.innerHTML = secondResult;
+    card2.innerHTML = `<img src="./img/${secondResult}.png">`;
 
     // Disable second button
     card2.disabled = true;
