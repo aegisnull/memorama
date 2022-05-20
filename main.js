@@ -33,7 +33,7 @@ console.log(numbers);
 function startTimer() {
   timeRemainingId = setInterval(() => {
     timer--;
-    showTimer.innerHTML = `Time: ${timer} segundos`;
+    showTimer.innerHTML = `Time: ${timer} seconds`;
     if (timer == 0) {
       clearInterval(timeRemainingId);
       blockCards();
