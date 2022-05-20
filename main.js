@@ -57,7 +57,7 @@ function uncover(id) {
     //show first number
     card1 = document.getElementById(id);
     firstResult = numbers[id];
-    card1.innerHTML = firstResult;
+    card1.innerHTML = `<img src="./img/${firstResult}.png">`;
 
     // Disable first button
     card1.disabled = true;
