@@ -52,15 +52,20 @@ function uncover(id) {
       // Update score counter
       score++;
       showScore.innerHTML = `Score: ${score}`;
+
+      if (score == 8) {
+        showScore.innerHTML = `Score: ${score} You won!`;
+        showMovements.innerHTML = `Movements: ${movements} Nice!`;
+      }
     } else {
-      // Show temporary cards and hide them after 2 seconds
+      // Show temporary cards and hide them after 1.5 seconds
       setTimeout(() => {
         card1.innerHTML = " ";
         card2.innerHTML = " ";
         card1.disabled = false;
         card2.disabled = false;
         uncoveredCards = 0;
-      }, 2000);
+      }, 1500);
     }
   }
 }
