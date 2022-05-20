@@ -95,11 +95,11 @@ function uncover(id) {
       if (score == 8) {
         winAudio.play();
         clearInterval(timeRemainingId);
-        showScore.innerHTML = `Score: ${score} You won!`;
-        showTimer.innerHTML = `Great! You won in ${
+        showScore.innerHTML = `Score: ${score} 🎉 You won!`;
+        showTimer.innerHTML = `Great! 😀 You won in ${
           initialTime - timer
         } seconds`;
-        showMovements.innerHTML = `Movements: ${movements} Nice!`;
+        showMovements.innerHTML = `Movements: ${movements} Nice!🥳`;
       }
     } else {
       // Show temporary cards and hide them after 1.5 seconds
