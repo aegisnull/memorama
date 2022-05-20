@@ -4,3 +4,13 @@ numbers = numbers.sort(() => {
 });
 
 console.log(numbers);
+
+// Main function
+function uncover(id) {
+  uncoveredCards++;
+  console.log(uncoveredCards);
+
+  if (uncoveredCards == 1) {
+    //show first number
+  }
+}
