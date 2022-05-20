@@ -61,4 +61,9 @@ footer {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+.icon-copyright {
+  font-size: 8px;
 }
