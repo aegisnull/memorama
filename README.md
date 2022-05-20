@@ -1,26 +1,30 @@
-# Description
+# Memorama Game
 
-    * Introducion
-    * Technology Stack
-    * Techniques Used
-    * DEMO
+     Introducion
+     Technology Stack
+     Techniques Used
+     DEMO
 
 ## Introduction
 
-This project is a landing page for the Odin Project, it's project 2 of the foundations course. It's main purpose is to practice the use of different technologies and techniques to create a landing page based on a reference JPEG file. No Figma or detailed information was provided so the instructions were to use wathever approach desired to recreate a website similar to the reference image.
+This is my first javascript project which consists of a small memory card game built entirely with Vanilla Javascript to put in practice my new knowledge of Javascript arrays, functions, loops and objects.
+
+<img width="650" alt="Screen Shot 2022-05-19 at 9 26 42 p m" src="https://user-images.githubusercontent.com/27663011/169450519-deb7bb11-7712-40d2-a36d-c6f2f39d9c3d.png">
 
 ## Technology Stack
 
 - HTML
-
-- SASS
+- CSS
+- Javascript
 
 ## Techniques Used
 
-- Flexbox
+- Arrays
+- Functions
+- Loops
 
 ## DEMO
 
-The website preview can be seen by clicking the following link.
+The game can be played by following the next link
 
-DEMO
+https://aegisnull.github.io/memorama/
