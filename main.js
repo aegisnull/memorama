@@ -4,6 +4,7 @@ let card1 = null;
 let card2 = null;
 let firstResult = null;
 let secondResult = null;
+let movements = 0;
 
 // Random number generator
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
@@ -25,5 +26,16 @@ function uncover(id) {
 
     // Disable first button
     card1.disabled = true;
+  } else if (uncoveredCards == 2) {
+    //show second number
+    card2 = document.getElementById(id);
+    secondResult = numbers[id];
+    card2.innerHTML = secondResult;
+
+    // Disable second button
+    card2.disabled = true;
+
+    // Increase movements
+    movements++;
   }
 }
