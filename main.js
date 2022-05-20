@@ -18,6 +18,6 @@ function uncover(id) {
   if (uncoveredCards == 1) {
     //show first number
     card1 = document.getElementById(id);
-    card1.innerHTML = "Hola";
+    card1.innerHTML = numbers[id];
   }
 }
