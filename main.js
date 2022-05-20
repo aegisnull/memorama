@@ -11,6 +11,12 @@ let timer = 30;
 let initialTime = 30;
 let timeRemainingId = false;
 
+let winAudio = new Audio("./sounds/win.wav");
+let loseAudio = new Audio("./sounds/lose.wav");
+let clickAudio = new Audio("./sounds/click.wav");
+let rightAudio = new Audio("./sounds/right.wav");
+let wrongAudio = new Audio("./sounds/wrong.wav");
+
 // Track movements & score to parse to HTML
 let showMovements = document.getElementById("movements");
 let showScore = document.getElementById("score");
@@ -31,6 +37,7 @@ function startTimer() {
     if (timer == 0) {
       clearInterval(timeRemainingId);
       blockCards();
+      loseAudio.play();
     }
   }, 1000);
 }
