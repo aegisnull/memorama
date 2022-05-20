@@ -51,6 +51,15 @@ function uncover(id) {
 
       // Update score counter
       score++;
-    }
+      showScore.innerHTML = `Score: ${score}`;
+    } else {
+        // Show temporary cards and hide them after 2 seconds
+        setTimeout(() => {
+            card1.innerHTML = " ";
+            card2.innerHTML = " ";
+            card1.disabled = false;
+            card2.disabled = false;
+            uncoveredCards = 0;
+        },2000);
   }
 }
